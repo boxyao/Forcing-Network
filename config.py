@@ -9,7 +9,7 @@
 #########################################
 workers = 8             # number of Dataloader workers
 epochs = 100            # nums of epochs
-batch_size = 4       # batch size
+batch_size = 6       # batch size
 learning_rate = 0.001   # initial learning rate
 optimizer = 'sgd'       # 'sgd','adam'1
 scheduler = 'muilt_step'#'muilt_step'# 'step', 'plateau', 'muilt_step', 'cosine'
@@ -39,7 +39,7 @@ dataset_tag = 'car'        # 'bird',   'dog',  'car',  'aircraft' ,'wilddogs'
 class_num = 196           # '200',    '120',  '196',     '100'
 checkpoint_path = 'checkpoint/%s' % dataset_tag+'dense161'
 model_load_path = 'checkpoint/%s%s/model_best.pth.tar' % (dataset_tag, gpu_ids)
-model_name = 'densenet161'        #'resnet50' 'resnet101' 'resnest50''densenet161','densenet169''densenet121'
+model_name = 'resnet50'        #'resnet50' 'resnet101' 'resnest50''densenet161','densenet169''densenet121'
 log_name = ''
 resume = '' #''
 print_freq = 100
